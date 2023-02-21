@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #302E2E;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+}
+
+
+.logo-header {
+    font-size: large;
+    color: #E5F582;
+}
+
+.navbar {
+
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #1E1F1D;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+
+.tab:hover {
+    background-color: #302E2E;
+}
+
+.tab a {
+    width: 100%;
+    height: 100%;
+    color: beige;
+    font-size: large;
+}
+
+.tab a#profile-tab i {
+    font-size: 26px;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -5px;
+}
