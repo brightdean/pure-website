@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('mousemove', e => {
+
     const mouseX = e.clientX;
     const mouseY = e.clientY;
     const centerX = window.innerWidth / 2;
@@ -23,5 +24,8 @@ document.addEventListener('mousemove', e => {
     const percentageY = deltaY / centerY;
     const offsetX = percentageX * 50;
     const offsetY = percentageY * 50;
-    backgroundElement.style.backgroundPosition = `calc(50% + ${offsetX / 2}px) calc(50% + ${offsetY / 2}px)`;
+    const clampedOffsetX = Math.min(Math.max(offsetX, -50), 50);
+    const clampedOffsetY = Math.min(Math.max(offsetY, -50), 50);
+    backgroundElement.style.backgroundPosition = `calc(${clampedOffsetX / 2}px) calc(${clampedOffsetY / 2}px)`;
 });
+
