@@ -5,6 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
 
 
+:root {
+    --jetblack: #343434;
+    --customorange: #FFC300;
+    --lettuce: #E5F582;
+}
+
 @keyframes swipeIn {
     from {
         transform: translateX(200px);
@@ -25,16 +31,27 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #302E2E;
+    background-color: black;
+    /* background-color: #302E2E; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+}
+
+.dotted-parallax {
+    background: radial-gradient(var(--jetblack) 4%,
+            transparent 4%);
+    background-position: 0% 0%;
+    background-size: 4vmin 4vmin;
+    /* transition: background-position .2s; */
+    width: 100vw;
+    height: 100vh;
 }
 
 .logo {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 20%;
-    left: 15%;
+    top: 10%;
+    left: 10%;
     margin: 0 0;
 }
 
@@ -43,7 +60,7 @@ body {
     font-family: 'Righteous', cursive;
     letter-spacing: 6px;
     font-size: 10vh;
-    color: #E5F582;
+    color: var(--customorange);
     margin: 0 0;
 }
 
