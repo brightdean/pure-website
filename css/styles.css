@@ -24,16 +24,22 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     background-color: #1E1F1D;
+    /* box-shadow: 5px 5px 15px #1E1F1D; */
 }
 
 .tab {
     padding: 10px;
     cursor: pointer;
     margin: 0 5px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 
 .tab:hover {
+    background-color: #302E2E;
+}
+
+.tab.active {
     background-color: #302E2E;
 }
 
