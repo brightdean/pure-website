@@ -1,6 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+
+
+@keyframes swipeIn {
+    from {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+.swipeIn {
+    animation: swipeIn .8s ease-in-out forwards;
+}
 
 body {
     margin: 0;
@@ -13,10 +33,11 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 15%;
     margin: 0 0;
 }
+
 
 .logo h1 {
     font-family: 'Righteous', cursive;
@@ -24,6 +45,21 @@ body {
     font-size: 10vh;
     color: #E5F582;
     margin: 0 0;
+}
+
+.logo-desc {
+    opacity: 0;
+    animation-delay: .3s;
+    width: 30vh;
+    word-wrap: break-word;
+}
+
+
+.logo-desc h2 {
+    color: antiquewhite;
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+    font-weight: lighter;
 }
 
 .navbar {
