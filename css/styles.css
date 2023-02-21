@@ -41,8 +41,8 @@ body {
     background: radial-gradient(var(--jetblack) 4%,
             transparent 4%);
     background-position: 0% 0%;
-    background-size: 6vmin 6vmin;
-    transition: background-position .2s ease-out;
+    background-size: 5vmin 5vmin;
+    transition: background-position .8s ease-out;
     width: 100vw;
     height: 100vh;
 }
