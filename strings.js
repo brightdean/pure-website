@@ -1,5 +1,6 @@
 const strings = {
-    siteLogo: `LandLord's`,
+    siteLogo: 'Urbex Maps',
+    siteDescString: 'Explore different places and learn their lore',
     homeString: 'Home',
     aboutString: 'About',
     contactString: 'Contact',

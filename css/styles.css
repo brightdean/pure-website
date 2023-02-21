@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -5,10 +9,21 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
 }
 
+.logo {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    margin: 0 0;
+}
 
-.logo-header {
-    font-size: large;
+.logo h1 {
+    font-family: 'Righteous', cursive;
+    letter-spacing: 6px;
+    font-size: 10vh;
     color: #E5F582;
+    margin: 0 0;
 }
 
 .navbar {
@@ -24,7 +39,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     background-color: #1E1F1D;
-    /* box-shadow: 5px 5px 15px #1E1F1D; */
+    box-shadow: 5px 5px 15px #1E1F1D;
 }
 
 .tab {
