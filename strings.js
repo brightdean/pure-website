@@ -4,4 +4,6 @@ const strings = {
     homeString: 'Home',
     aboutString: 'About',
     contactString: 'Contact',
+    exploreString: 'Explore',
+    activityString: 'Activity',
 }

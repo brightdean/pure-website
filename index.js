@@ -4,14 +4,16 @@ const logoDesc = document.getElementById("logo-desc");
 const logoDescHeader = logoDesc.querySelector("#desc");
 
 const homeTab = document.getElementById("home-tab");
-const aboutTab = document.getElementById("about-tab");
+const exploreTab = document.getElementById("explore-tab");
+const activityTab = document.getElementById("activity-tab");
 
-const tabs = [homeTab, aboutTab];
+const tabs = [homeTab, exploreTab, activityTab];
 
 logoDescHeader.textContent = strings.siteDescString;
 
 homeTab.querySelector("a").textContent = strings.homeString;
-aboutTab.querySelector("a").textContent = strings.aboutString;
+exploreTab.querySelector("a").textContent = strings.exploreString;
+activityTab.querySelector("a").textContent = strings.activityString;
 
 document.title = strings.siteLogo;
 

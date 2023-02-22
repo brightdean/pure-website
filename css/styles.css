@@ -91,7 +91,7 @@ body {
     align-items: center;
     padding-top: 5px;
     padding-bottom: 50px;
-
+    gap: 20px;
     background-color: var(--darkergray);
     /* box-shadow: 5px 5px 15px #1E1F1D; */
     position: absolute;
@@ -107,7 +107,7 @@ body {
 
 
 .tab a {
-    transition: all .4s ease-in-out;
+    transition: all .3s ease-in-out;
     border-bottom: 2px solid var(--darkergray);
     width: 100%;
     height: 100%;
